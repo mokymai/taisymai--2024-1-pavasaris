@@ -1,18 +1,16 @@
 name:  Netikslumas skaidrėse
-description:  Netikslumas biostatistikos skaidrėse.
-title: "'P__-_ (v1.0) sk._: netikslumas → taisymas'"
+description: Pranešimas apie netikslumą skaidrėse.
+title: "P__-_ (v1.0) sk._: netikslumas → taisymas"
 labels: ["Naujas :new:", "Vieta: skaidrės :orange_book:"]
 body:
   - type: markdown
     attributes:
-      value: >
-          Temos **pavadinime** apibūdinkite netikslumo esmę, kuri padėtų 
-          **kitiems skaitytojams greitai susiorientuoti**, kad apie šį 
-          netikslumą jau pranešta.
+      value: |
+          Temos **pavadinime** apibūdinkite netikslumo esmę, kuri padėtų **kitiems skaitytojams greitai susiorientuoti**, kad apie šį netikslumą jau pranešta.
 
-          1. Prašykite skaidrių bloko kodą (pvz., `P01-4`)
-          2. Bloko versiją, pvz., (`v1.0`). Jei versija neparašyta, tai ji yra `1.0`.;
-          3. Skaidrės numerį, pvz. `sk.14`, per kablelį gali būti nurodytos kelios skaidrės;
+          1. Prašykite skaidrių bloko kodą (pvz., `P01-4`);  
+          2. Bloko versiją, pvz., (`v1.0`). Jei versija neparašyta, tai ji yra `1.0`.;  
+          3. Skaidrės numerį, pvz. `sk.14`, per kablelį gali būti nurodytos kelios skaidrės;  
           4. Apibūdinkite netikslumo esmę. Jei galima, tokiu formatu: `netikslumas → taisymas`.
           Pvz.:  
           „`P01-4 (v1.0) sk.14: kopppiuteris → kompiuteris`“  
@@ -51,7 +49,7 @@ body:
     attributes:
       label: Glaustai apibūdinkite netikslumą
       description: Pvz., rašybos klaida, skyrybos klaida, nesuderinti linksniai, fakto klaida, skaičiavimo klaida, loginė klaida, ...
-  - type: textarea
+  - type: input
     id: error-with-context
     attributes:
       label: Nukopijuokite netikslumą su keliais žodžiais aplinkui
