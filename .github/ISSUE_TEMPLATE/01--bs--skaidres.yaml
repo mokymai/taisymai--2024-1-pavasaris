@@ -3,6 +3,28 @@ description: Pranešimas apie netikslumą skaidrėse.
 title: "P__-_ (v1.0) sk._: netikslumas → taisymas (esmė)"
 labels: ["Naujas :new:", "Vieta: skaidrės :orange_book:"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+          Temos **pavadinime** apibūdinkite netikslumo esmę, kuri padėtų **kitiems skaitytojams greitai susiorientuoti**, kad apie šį netikslumą jau pranešta.
+
+          1. Prašykite skaidrių bloko kodą (pvz., `P01-4`);  
+          2. Bloko versiją, pvz., (`v1.0`). Jei versija neparašyta, tai ji yra `1.0`;  
+          3. Skaidrės numerį, pvz. `sk.14`, per kablelį gali būti nurodytos kelios skaidrės, pvz., `sk.1,5`;  
+          4. Apibūdinkite netikslumo esmę. Jei galima, tokiu formatu: `netikslumas → taisymas (esmė)`.
+          Pvz.:  
+          „`P01-4 (v1.0) sk.14: kopppiuteris → kompiuteris (rašyba)`“  
+          „`P11-1 (v2.1) sk.1,5: praleistas žodis "tačiau"`“
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Patvirtinimas
+      options:
+        - label: Temos pavadinime nurodžiau skaidrių bloko kodą, versiją ir skaidrės numerį.
+          required: true
+        - label: Temos pavadinime nurodžiau konkrečios problemos esmę.
+          required: true
+        - label: "Apie šią problemą dar niekas nėra pranešęs: esu pirmasis/pirmoji."
   - type: dropdown
     id: course
     attributes:
@@ -45,28 +67,6 @@ body:
     id: error-type-other
     attributes:
       label: Netikslumo tipas (patikslinimas, jei reikia)
-  - type: markdown
-    attributes:
-      value: |
-          Temos **pavadinime** apibūdinkite netikslumo esmę, kuri padėtų **kitiems skaitytojams greitai susiorientuoti**, kad apie šį netikslumą jau pranešta.
-
-          1. Prašykite skaidrių bloko kodą (pvz., `P01-4`);  
-          2. Bloko versiją, pvz., (`v1.0`). Jei versija neparašyta, tai ji yra `1.0`;  
-          3. Skaidrės numerį, pvz. `sk.14`, per kablelį gali būti nurodytos kelios skaidrės, pvz., `sk.1,5`;  
-          4. Apibūdinkite netikslumo esmę. Jei galima, tokiu formatu: `netikslumas → taisymas (esmė)`.
-          Pvz.:  
-          „`P01-4 (v1.0) sk.14: kopppiuteris → kompiuteris (rašyba)`“  
-          „`P11-1 (v2.1) sk.1,5: praleistas žodis "tačiau"`“
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Patvirtinimas
-      options:
-        - label: "Apie šią problemą dar niekas nėra pranešęs: esu pirmasis/pirmoji."
-        - label: Temos pavadinime nurodžiau skaidrių bloko kodą, versiją ir skaidrės numerį.
-          required: true
-        - label: Temos pavadinime nurodžiau konkrečios problemos esmę.
-          required: true
   - type: input
     id: error-with-context
     attributes:
@@ -94,4 +94,3 @@ body:
     attributes:
       label: Komentaras
       description: Jei reikia, pateikite papildomos informacijos.
-
