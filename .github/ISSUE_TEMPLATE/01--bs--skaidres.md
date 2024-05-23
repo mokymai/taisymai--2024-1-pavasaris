@@ -2,7 +2,7 @@
 name: Netikslumas skaidrėse (BS-2024)
 about: Pranešimas apie netikslumą biostatistikos skaidrėse
 title: 'P__-_ (v1.0) sk._: netikslumas → taisymas (skaidrės)'
-labels: ['BS-2024', 'Slides :orange_book:']
+labels: ['Vieta: skaidrės :orange_book:']
 assignees: ''
 ---
 
