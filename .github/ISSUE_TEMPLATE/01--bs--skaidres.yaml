@@ -21,9 +21,9 @@ body:
       label: Patvirtinimas
       options:
         - label: Apie šią problemą dar niekas nėra pranešęs. Aš esu pirmasis/pirmoji.
-        - label: Pateikiau informatyvų temos pavadinimą, pagal kurį galima identifikuoti problemos esmę.
-          required: true
         - label: Temos pavadinime nurodžiau skaidrių bloko kodą, versiją ir skaidrės numerį.
+          required: true
+        - label: Pateikiau informatyvų temos pavadinimą, pagal kurį galima identifikuoti problemos esmę.
           required: true
   - type: dropdown
     id: course
@@ -61,7 +61,7 @@ body:
         - stilius (stiliaus klaida)
         - kita
   - type: input
-    id: error-type
+    id: error-type-other
     attributes:
       label: Netikslumo tipas (patikslinimas)
       description: Jei reikia, glaustai apibūdinkite ar patikslinkite netikslumo tipą
