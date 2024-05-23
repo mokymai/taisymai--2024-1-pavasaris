@@ -38,7 +38,7 @@ body:
   - type: input
     id: block
     attributes:
-      label: dropdown
+      label: Skaidrių bloko pavadinimas ir versija
       description: Pvz., `P01-4 (v1.0)`
       placeholder: P01-4 (v1.0)
   - type: input
