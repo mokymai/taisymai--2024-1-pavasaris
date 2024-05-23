@@ -39,8 +39,8 @@ body:
         - skyryba
         - stilius
         - kita
-      validations:
-        required: true
+    validations:
+      required: true
   - type: input
     id: error-type-other
     attributes:
@@ -94,3 +94,4 @@ body:
     attributes:
       label: Komentaras
       description: Jei reikia, pateikite papildomos informacijos.
+
