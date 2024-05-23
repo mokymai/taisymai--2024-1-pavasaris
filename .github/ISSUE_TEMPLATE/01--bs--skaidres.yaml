@@ -1,6 +1,6 @@
 name:  Netikslumas skaidrėse
 description: Pranešimas apie netikslumą skaidrėse.
-title: "P__-_ (v1.0) sk._: netikslumas → taisymas"
+title: "P__-_ (v1.0) sk._: netikslumas → taisymas (esmė)"
 labels: ["Naujas :new:", "Vieta: skaidrės :orange_book:"]
 body:
   - type: markdown
@@ -13,8 +13,18 @@ body:
           3. Skaidrės numerį, pvz. `sk.14`, per kablelį gali būti nurodytos kelios skaidrės;  
           4. Apibūdinkite netikslumo esmę. Jei galima, tokiu formatu: `netikslumas → taisymas`.
           Pvz.:  
-          „`P01-4 (v1.0) sk.14: kopppiuteris → kompiuteris`“  
+          „`P01-4 (v1.0) sk.14: kopppiuteris → kompiuteris (rašyba)`“  
           „`P11-1 (v2.1) sk.1,5: praleistas žodis "tačiau"`“ (jei nurodytos kelios skaidrės).
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Patvirtinimas
+      options:
+        - label: Apie šią problemą dar niekas nėra pranešęs. Aš esu pirmasis/pirmoji.
+        - label: Pateikiau informatyvų temos pavadinimą, pagal kurį galima identifikuoti problemos esmę.
+          required: true
+        - label: Temos pavadinime nurodžiau skaidrių bloko kodą, versiją ir skaidrės numerį.
+          required: true
   - type: dropdown
     id: course
     attributes:
@@ -33,22 +43,28 @@ body:
         - skaidrės (PDF, PowerPoint)
         - kitur
       default: 0
-  - type: input
-    id: block
+  - type: dropdown
+    id: error-type
     attributes:
-      label: Skaidrių bloko pavadinimas ir versija
-      description: Pvz., `P01-4 (v1.0)`
-      placeholder: P01-4 (v1.0)
-  - type: input
-    id: slide
-    attributes:
-      label: Skaidrės numeris
-      description: Pvz., `14` ar `sk.14`
+      label: Netikslumo tipas
+      description: Pasirinkite vieną ar kelis.
+      multiple: true
+      options:
+        - rašyba (praleista raidė ar kitokia rašybos klaida)
+        - gramatika (nesuderinti linksniai ar kitokia gramatikos klaida)
+        - praleistas žodis 
+        - pasikartojimas (pasikartojantis žodis ar frazė)
+        - skyryba (skyrybos klaida)
+        - skaičiavimo klaida
+        - fakto klaida
+        - netinkamas terminas
+        - stilius (stiliaus klaida)
+        - kita
   - type: input
     id: error-type
     attributes:
-      label: Glaustai apibūdinkite netikslumą
-      description: Pvz., rašybos klaida, skyrybos klaida, nesuderinti linksniai, fakto klaida, skaičiavimo klaida, loginė klaida, ...
+      label: Netikslumo tipas (patikslinimas)
+      description: Jei reikia, glaustai apibūdinkite ar patikslinkite netikslumo tipą
   - type: input
     id: error-with-context
     attributes:
@@ -68,15 +84,12 @@ body:
     id: screenshot
     attributes:
       label: Ekrano nuotrauka („Screenshot“)
-      description: | 
-        Viena ar kelios ekrano nuotraukos su pažymėtomis netikslumų vietomis.
+      description: Viena ar kelios ekrano nuotraukos su pažymėtomis netikslumų vietomis.
     validations:
       required: true
-  - type: checkboxes
-    id: terms
+  - type: textarea
+    id: comment
     attributes:
-      label: Patvirtinimas
-      options:
-        - label: Apie šią problemą dar niekas nėra pranešęs. Aš esu pirmasis/pirmoji.
-        - label: Pateikiau informatyvų temos pavadinimą, pagal kurį galima identifikuoti problemos esmę.
+      label: Komentaras
+      description: Jei reikia, pateikite papildomos informacijos.
 
