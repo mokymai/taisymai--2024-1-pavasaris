@@ -45,9 +45,7 @@ body:
     id: slide
     attributes:
       label: Skaidrės numeris
-      description: Pvz., `sk.14`
-      placeholder: sk.14
-      value: "sk."
+      description: Pvz., `14` ar `sk.14`
   - type: input
     id: error-type
     attributes:
