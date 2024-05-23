@@ -1,5 +1,5 @@
 name:  Papildomų balų registracija
-description:  Papildomų balų registracija (kai dėstytojas juos paskiria)
+description:  Papildomų balų registracija (kai dėstytojas juos paskiria).
 title: "Papildomi balai (2024-..-..)"
 labels: ["Naujas :new:", "Papildomi balai :star:"]
 body:
@@ -13,7 +13,6 @@ body:
       label: Dalykas
       options:
         - BS-2024
-        - R-2024
         - kitas
       default: 0
     validations:
@@ -22,6 +21,7 @@ body:
     id: date
     attributes:
       label: Data
+      description: Pvz., 2024-12-01
       placeholder: yyyy-mm-dd
     validations:
       required: true
@@ -29,6 +29,6 @@ body:
     id: purpose
     attributes:
       label: Už ką skirti balai?
-      description: Atlikta užduotis / Atsakytas klausimas / ar pan.
+      description: Atlikta užduotis, atsakytas klausimas ar pan.
     validations:
       required: true
