@@ -5,7 +5,7 @@ labels: ["Naujas :new:", "Vieta: skaidrės :orange_book:"]
 body:
   - type: markdown
     attributes:
-      value: |
+      value: >
           Temos **pavadinime** apibūdinkite netikslumo esmę, kuri padėtų 
           **kitiems skaitytojams greitai susiorientuoti**, kad apie šį 
           netikslumą jau pranešta.
