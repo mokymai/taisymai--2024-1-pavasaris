@@ -1,6 +1,6 @@
 ---
 name: Netikslumas skaidrėse (BS-2024)
-about: Pranešimas apie netikslumą biostatistikos skaidrėse
+about: SENOJI FORMA. Pranešimas apie netikslumą biostatistikos skaidrėse
 title: 'P__-_ (v1.0) sk._: netikslumas → taisymas (skaidrės)'
 labels: ['Vieta: skaidrės :orange_book:']
 assignees: ''
