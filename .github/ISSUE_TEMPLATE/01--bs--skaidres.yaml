@@ -15,34 +15,26 @@ body:
           Pvz.:  
           „`P01-4 (v1.0) sk.14: kopppiuteris → kompiuteris (rašyba)`“  
           „`P11-1 (v2.1) sk.1,5: praleistas žodis "tačiau"`“
-  - type: checkboxes
-    id: terms
+  - type: textarea
+    id: screenshot
     attributes:
-      label: Patvirtinimas
-      options:
-        - label: Temos pavadinime nurodžiau skaidrių bloko kodą, versiją ir skaidrės numerį.
-          required: true
-        - label: Temos pavadinime nurodžiau konkrečios problemos esmę.
-          required: true
-        - label: "Apie šią problemą dar niekas nėra pranešęs: esu pirmasis/pirmoji."
-  - type: dropdown
-    id: course
-    attributes:
-      label: Dalykas
-      options:
-        - BS-2024
-        - kitas
-      default: 0
+      label: Ekrano nuotrauka su pažymėtais netikslumais
+      description: Viena ar kelios ekrano nuotraukos („Screenshot“) su pažymėtomis netikslumų vietomis.
     validations:
       required: true
-  - type: dropdown
-    id: place
+  - type: input
+    id: error-with-context
     attributes:
-      label: Netikslumo vieta
-      options:
-        - skaidrės
-        - kitur
-      default: 0
+      label: Nukopijuokite netikslumą su keliais žodžiais aplinkui
+      description: To reikia greitai paieškai dokumente.
+  - type: input
+    id: error
+    attributes:
+      label: Netikslumo tekstas
+  - type: input
+    id: correction
+    attributes:
+      label: Siūlomas taisymo tekstas
   - type: dropdown
     id: error-type
     attributes:
@@ -67,29 +59,36 @@ body:
     id: error-type-other
     attributes:
       label: Netikslumo tipas (patikslinkite, jei reikia)
-  - type: input
-    id: error-with-context
-    attributes:
-      label: Nukopijuokite netikslumą su keliais žodžiais aplinkui
-      description: To reikia greitai paieškai dokumente.
-  - type: input
-    id: error
-    attributes:
-      label: Netikslumo tekstas
-  - type: input
-    id: correction
-    attributes:
-      label: Siūlomas taisymo tekstas
-  - type: textarea
-    id: screenshot
-    attributes:
-      label: Ekrano nuotrauka („Screenshot“)
-      description: Viena ar kelios ekrano nuotraukos su pažymėtomis netikslumų vietomis.
-    validations:
-      required: true
   - type: textarea
     id: comment
     attributes:
       label: Komentaras
       description: Jei reikia, pateikite papildomos informacijos.
-
+    - type: dropdown
+    id: course
+    attributes:
+      label: Dalykas
+      options:
+        - BS-2024
+        - kitas
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: place
+    attributes:
+      label: Netikslumo vieta
+      options:
+        - skaidrės
+        - kitur
+      default: 0
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Patvirtinimas
+      options:
+        - label: Temos pavadinime nurodžiau skaidrių bloko kodą, versiją ir skaidrės numerį.
+          required: true
+        - label: Temos pavadinime nurodžiau konkrečios problemos esmę.
+          required: true
+        - label: "Apie šią problemą dar niekas nėra pranešęs: esu pirmasis/pirmoji."
