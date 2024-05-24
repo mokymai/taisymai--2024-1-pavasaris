@@ -22,19 +22,6 @@ body:
       description: Viena ar kelios ekrano nuotraukos („Screenshot“) su pažymėtomis netikslumų vietomis.
     validations:
       required: true
-  - type: input
-    id: error-with-context
-    attributes:
-      label: Netikslumo tekstas su keliais žodžiais aplinkui
-      description: To reikia greitai paieškai dokumente.
-  - type: input
-    id: error
-    attributes:
-      label: Netikslumo tekstas
-  - type: input
-    id: correction
-    attributes:
-      label: Siūlomas taisymo tekstas
   - type: dropdown
     id: error-type
     attributes:
@@ -55,6 +42,19 @@ body:
         - kita
     validations:
       required: true
+  - type: input
+    id: error-with-context
+    attributes:
+      label: Netikslumo tekstas su keliais žodžiais aplinkui
+      description: To reikia greitai paieškai dokumente.
+  - type: input
+    id: error
+    attributes:
+      label: Netikslumo tekstas
+  - type: input
+    id: correction
+    attributes:
+      label: Siūlomas taisymo tekstas
   - type: textarea
     id: comment
     attributes:
