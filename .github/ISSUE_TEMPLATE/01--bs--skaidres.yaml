@@ -27,17 +27,14 @@ body:
     attributes:
       label: Netikslumo tekstas su keliais žodžiais aplinkui
       description: To reikia greitai paieškai dokumente.
-      value: " "
   - type: input
     id: error
     attributes:
       label: Netikslumo tekstas
-      value: " "
   - type: input
     id: correction
     attributes:
       label: Siūlomas taisymo tekstas
-      value: " "
   - type: dropdown
     id: error-type
     attributes:
@@ -62,13 +59,11 @@ body:
     id: error-type-other
     attributes:
       label: Netikslumo tipas (patikslinkite, jei reikia)
-      value: " "
   - type: textarea
     id: comment
     attributes:
       label: Komentaras
       description: Jei reikia, pateikite papildomos informacijos.
-      value: " "
   - type: dropdown
     id: course
     attributes:
@@ -77,6 +72,8 @@ body:
         - BS-2024
         - kitas
       default: 0
+    validations:
+      required: true
   - type: dropdown
     id: place
     attributes:
