@@ -64,7 +64,7 @@ body:
     attributes:
       label: Komentaras
       description: Jei reikia, pateikite papildomos informacijos.
-    - type: dropdown
+  - type: dropdown
     id: course
     attributes:
       label: Dalykas
