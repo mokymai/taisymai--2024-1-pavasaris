@@ -55,10 +55,6 @@ body:
         - kita
     validations:
       required: true
-  - type: input
-    id: error-type-other
-    attributes:
-      label: Netikslumo tipas (patikslinkite, jei reikia)
   - type: textarea
     id: comment
     attributes:
@@ -72,8 +68,6 @@ body:
         - BS-2024
         - kitas
       default: 0
-    validations:
-      required: true
   - type: dropdown
     id: place
     attributes:
